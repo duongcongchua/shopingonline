@@ -1,0 +1,141 @@
+
+/* ===== GENERAL ===== */
+
+.body-customer {
+  width: 1150px;
+  max-width: 96%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.align-center {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+figure.caption-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+figure.caption-right img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+figure.caption-right figcaption {
+  text-align: left;
+}
+
+/* ===== MENU ===== */
+
+.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 12px 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-clear {
+  clear: both;
+}
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+li.menu a {
+  text-decoration: none;
+  color: blue;
+}
+
+li.menu a:hover {
+  text-decoration: underline;
+}
+
+form.search {
+  margin: 0;
+}
+
+input.keyword {
+  width: 170px;
+  padding: 5px;
+}
+
+/* ===== PRODUCT ===== */
+
+.customer-home {
+  padding: 20px 0;
+}
+
+.customer-home h2 {
+  margin: 25px 0;
+}
+
+.inline figure {
+  margin: 15px;
+  width: 300px;
+}
+
+.inline figure img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.inline figcaption {
+  line-height: 1.8;
+}
+
+.caption-right table td {
+  padding: 7px;
+}
+
+.caption-right input[type="number"] {
+  width: 70px;
+  padding: 5px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 800px) {
+  .float-left,
+  .float-right {
+    float: none;
+    margin: 8px 0;
+  }
+
+  ul.menu li {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  figure.caption-right {
+    flex-direction: column;
+  }
+}
